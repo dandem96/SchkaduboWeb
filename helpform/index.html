@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href="index.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body style="background-color:grey">
+
+<!-- Pre Table Text --> 
+<p align="center" style="font-size:120%"> Please fill out this form to see if I can use your help. </p>
+<br>
+
+<!-- Table -->
+<table bgcolor="#FFFFFF" border="1" style="width:85%" align="center">
+  <col width="50%">
+  <col width="50%">
+  
+  <!-- Question 1 -->
+  <tr>
+    <td height="60" style="font-size:130%"> Will you help me?
+	<select id="help">
+  		<option value="1">Yes</option>
+  		<option value="0">No</option>
+		</select></td>
+    <td style="font-size:130%">Help me so I can get back on my feet. I will reward you hansomely!</td>
+  </tr>
+  
+  <!-- Question 2 -->
+  <tr>
+    <td height="60" style="font-size:130%"> Will you do it graciously?
+	<select id="graciously">
+  		<option value="1">Yes</option>
+  		<option value="0">No</option>
+		</select></td>
+    <td style="font-size:130%"> Please do so with good feelings in your heart. You would be helping a great man.</td>
+  </tr>
+  
+  <!-- Question 3 -->
+  <tr>
+    <td height="60" style="font-size:130%"> Will you remind your tribe of my greatness? 
+	<select id="remind">
+  		<option value="1">Yes</option>
+  		<option value="0">No</option>
+		</select></td>
+    <td style="font-size:130%">A little good PR goes a long way.</td>
+  </tr>
+  
+  <!-- Submit Form -->
+  <tr>
+	<!-- Submit Form Button -->
+    <td height="60" align="center" style="font-size:130%">
+	<button valign="middle" type="button" style="font-size:70%" onclick="myFunction()">Click here if you will help me.</button>
+
+	<script>
+	//Javascript button functionality
+	function myFunction() {
+
+		// Get the value of the input field with id="help"
+		x = document.getElementById("help").value;
+
+		// Get the value of the input field with id="graciously"
+		y = document.getElementById("graciously").value;
+		
+		// Get the value of the input field with id="remind"
+		z = document.getElementById("remind").value;
+
+		// If x and y are 1 then accept
+		if (x == 1 && y == 1 && z == 1) {
+		{window.location = "contactform/index.php";}
+		} else {
+			text = "Please Reconsider (Say Yes!)";
+		}
+		document.getElementById("demo").innerHTML = text;
+	}
+	</script>
+	<p id="demo"></p></td>
+	<td style="font-size:130%"> Click here only if you will help me and will do so graciously while proclaiming my greatness.</td>    
+ </tr>
+
+ <!-- End Table -->
+</table>
+
+
+</body>
+</html>
+

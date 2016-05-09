@@ -1,0 +1,99 @@
+/* Margins Formating*/
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+/* Border Formating */
+#top, #bottom, #left, #right {
+	background-color: #fff;
+	position: fixed;
+}
+
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 1px;
+		}
+
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 1px;
+		}
+
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+/* Nav Bar Formating */
+	nav {
+		background-color: #C0C0C0;	
+		border: 1px solid #dedede;
+		border-radius: 4px; /*Rounded Edges on Menu */	
+		display: block;
+		width: auto;
+	}
+
+  	nav ul {
+    		margin: 0;
+    		padding: 0;
+  	}
+
+	nav ul li {
+      		display: inline-block;
+    	}
+      
+	nav > ul > li > a {
+        	color: #000000;
+        	line-height: 56px;
+        	padding: 0px 24px;
+        	text-decoration: none;
+      	}
+
+	/* changes box color to black when hovered for top menu items*/
+		nav > ul > li:hover {
+          	background-color: rgb( 0, 0, 0 );
+        }
+
+	/* changes text color to white when hovered over top menu items*/
+        nav > ul > li:hover > a {
+          color: rgb( 255, 255, 255 );
+        }
+      
+	/* vertical list for menu*/
+     	 nav > ul > li > div {        
+        	border-radius: 4px;
+		border: 1px solid #dedede;
+        	display: none;
+		position: absolute;
+		min-height: 55px;
+        	width: auto;
+      	}
+
+	/* creates submenu boxes for menu*/
+	nav > ul > li:hover > div {
+		background: #C0C0C0;
+		display: inline;
+		opacity: 1;
+		visibility: visible;
+        }
+
+	/* formats submenu text for menu */
+	nav > ul > li:hover > div ul > li > a { 
+		color: #fff;
+		display: block;
+		padding: 18px 24px;		
+		text-decoration: none;
+      	}
+
+	/* changes box color to black when hovered over submenu items*/
+	nav > ul > li:hover > div ul > li:hover > a { 
+		background: #000000;
+		display: block;
+		opacity: 1;
+		visibility: visible;
+      	}
+
