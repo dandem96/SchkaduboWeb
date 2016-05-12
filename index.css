@@ -101,7 +101,7 @@ p {
 .moving {
     position: absolute;
     white-space: nowrap;
-    -webkit-animation: left 4s linear;
+    -webkit-animation: left 10s linear;
 }
 
 @-webkit-keyframes left {
