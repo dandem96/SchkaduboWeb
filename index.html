@@ -78,7 +78,7 @@ Now, the Emperor has been deposed and I fear my kingdom will never be rescued.
 <br>
 
 <!-- Stock Ticker  -->
-<p style="text-align:center" id="demo"></p>
+<p style="font-size:120%;text-align:center" id="stock"></p>
 
 <script>
 //variables
@@ -91,10 +91,10 @@ function getStockIndexData() {
 getStockIndexData();
 if (stockIndexChange >= 0) {
     var positiveStatement = "The Kemyllawana500 Stock Index is up " + Math.abs(stockIndexChange)+ " from your last visit.";  	
-    document.getElementById("demo").innerHTML = positiveStatement.fontsize(6).fontcolor("green");
+    document.getElementById("stock").innerHTML = positiveStatement.fontcolor("green");
 } else {
     var negativeStatement = "The Kemyllawana500 Stock Index is down " + Math.abs(stockIndexChange)+ " from your last visit.";  	
-    document.getElementById("demo").innerHTML = negativeStatement.fontsize(6).fontcolor("red");
+    document.getElementById("stock").innerHTML = negativeStatement.fontcolor("red");
 }
 </script>
 
