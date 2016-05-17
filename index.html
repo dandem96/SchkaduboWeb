@@ -90,11 +90,11 @@ function getStockIndexData() {
 //instruction cycle
 getStockIndexData();
 if (stockIndexChange >= 0) {
-    document.getElementById("demo").innerHTML = 
-    "The Kemyllawana500 Stock Index is up " + Math.abs(stockIndexChange) + " from your last visit.";
+    var positiveStatement = "The Kemyllawana500 Stock Index is up " + Math.abs(stockIndexChange)+ " from your last visit.";  	
+    document.getElementById("demo").innerHTML = positiveStatement.fontcolor("green");
 } else {
-    document.getElementById("demo").innerHTML = 
-    "The Kemyllawana500 Stock Index is down " + Math.abs(stockIndexChange)+ " from your last visit.";  
+    var negativeStatement = "The Kemyllawana500 Stock Index is down " + Math.abs(stockIndexChange)+ " from your last visit.";  	
+    document.getElementById("demo").innerHTML = negativeStatement.fontcolor("red");
 }
 </script>
 
