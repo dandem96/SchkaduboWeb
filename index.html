@@ -91,7 +91,7 @@ function getStockIndexData() {
 getStockIndexData();
 if (stockIndexChange >= 0) {
     var positiveStatement = "The Kemyllawana500 Stock Index is up " + Math.abs(stockIndexChange)+ " from your last visit.";  	
-    document.getElementById("stock").innerHTML = positiveStatement.fontcolor("green");
+    document.getElementById("stock").innerHTML = positiveStatement.fontcolor("lightgreen");
 } else {
     var negativeStatement = "The Kemyllawana500 Stock Index is down " + Math.abs(stockIndexChange)+ " from your last visit.";  	
     document.getElementById("stock").innerHTML = negativeStatement.fontcolor("red");
