@@ -69,7 +69,7 @@ Now, the Emperor has been deposed and I fear my kingdom will never be rescued.
 </p>
 
 <!-- Link to HelpForm -->
-<a href="helpform/index.html"><p style="font-size:150%;text-align:center"> Help me here.</a>
+<a href="helpform/index.html" target="_blank"><p style="font-size:150%;text-align:center"> Help me here.</a>
 <br>
 <br>
 <br>
@@ -78,7 +78,7 @@ Now, the Emperor has been deposed and I fear my kingdom will never be rescued.
 <br>
 
 <!-- Stock Ticker  -->
-<p style="text-align:center" id="demo"></p>
+<p style="text-align:center" id="stock"></p>
 
 <script>
 //variables
@@ -89,12 +89,15 @@ function getStockIndexData() {
 }
 //instruction cycle
 getStockIndexData();
-if (stockIndexChange >= 0) {
-    document.getElementById("demo").innerHTML = 
-    "The Kemyllawana500 Stock Index is up " + Math.abs(stockIndexChange) + " from your last visit.";
+if (stockIndexChange > 0) {
+    document.getElementById("stock").innerHTML = "The Kemyllawana500 Stock Index is up " + Math.abs(stockIndexChange) + " from your last visit.";
+	document.getElementById("stock").style.color = "green"
+} else if (stockIndexChange == 0) {
+    document.getElementById("stock").innerHTML = "The Kemyllawana500 Stock Index is unchanged from your last visit.";
+	document.getElementById("stock").style.color = "black"
 } else {
-    document.getElementById("demo").innerHTML = 
-    "The Kemyllawana500 Stock Index is down " + Math.abs(stockIndexChange)+ " from your last visit.";  
+	document.getElementById("stock").innerHTML = "The Kemyllawana500 Stock Index is down " + Math.abs(stockIndexChange) + " from your last visit.";
+	document.getElementById("stock").style.color = "red"
 }
 </script>
 
