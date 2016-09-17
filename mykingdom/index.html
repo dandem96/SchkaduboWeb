@@ -12,12 +12,75 @@
 
 <!-- Picture -->
 <figure>
-<p style="text-align:center"><img src="images/mykingdommap.png" alt="Oyo-Uson" title="Oyo-Uson" style="width:800px;height:400px;">
+<div id="test" style="text-align:center"><img src="images/mykingdommap.png" alt="Oyo-Uson" title="Oyo-Uson" style="width:800px;height:400px;"></div>
 <figcaption>
 <p style= "text-align:center">^Map of my kingdom of Oyo-Uson in the Nigerian Empire.^</p>
 </figcaption
 </figure>
 <br>
+
+
+<!-- *WIP* Place stick figure in map randomly 
+Current Issues:
+	Image does not render
+	Placement is not random -->
+
+<img id="stickfig1" style = "position: absolute; height:220px;" alt="Stick Figure 1 on Map" title="Stick Figure on Map">
+
+<!-- *WIP* Script -->
+<script>
+//variables
+var pictureArray = new Array();
+
+pictureArray[0] = new Image();
+pictureArray[0].src = "images/ballet-man.png";
+
+pictureArray[1] = new Image();
+pictureArray[1].src = "images/falling-man.png";
+
+pictureArray[2] = new Image();
+pictureArray[2].src = "images/handstand-man.png";
+
+pictureArray[3] = new Image();
+pictureArray[3].src = "images/questioning-man.png";
+
+//functions
+	//shuffleArray
+	window.onload = function shuffleArray(array) { //shuffles the array via durstenfeld shuffle
+		for (var i = array.length - 1; i > 0; i--) { //as "i--" suggests, suffle is intended to function "backwards"
+			var j = Math.floor(Math.random() * (i + 1));
+			var temp = array[i];
+			array[i] = array[j];
+			array[j] = temp;
+		}
+		return array;
+	}
+
+	//pickOne
+	window.onload = function pickOne(array) { //picks first value in the array
+			return array[0];		
+	}
+	
+	//generateHorizontalCoord
+	window.onload = function generateHorizontalCoord() { //generates a horizontal coordinate
+		var horizontalCoord = 100;
+	}
+	
+	//generateVerticalCoord
+	window.onload = function generateVerticalCoord() { //generates a vertical coordinate
+		var verticalCoord = 200);
+	}
+
+//instruction cycle
+document.getElementById("stickfig1").src = pickOne(shuffleArray(pictureArray));
+
+generateHorizontalCoord();
+generateVerticalCoord();
+
+document.getElementById("stickfig1").style.left = horizontalCoord;
+document.getElementById("stickfig1").style.top = verticalCoord; 
+
+</script>
 
 <!-- Text -->
 <p style="font-size:150%" style="text-align:left">Humble Beginings: </p>
