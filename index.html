@@ -33,6 +33,7 @@
 			</div>
 		</li>
 		<li><a href="mykingdom/index.html">Oyo-Uson</a></li>
+		<li><a href="harambe/index.html">Harambe</a></li>
 	</ul>
 </nav>
 
@@ -90,13 +91,13 @@ function getStockIndexData() {
 //instruction cycle
 getStockIndexData();
 if (stockIndexChange > 0) {
-    document.getElementById("stock").innerHTML = "The Kemyllawana500 Stock Index is up " + Math.abs(stockIndexChange) + " from your last visit.";
+    document.getElementById("stock").innerHTML = "The Kemyllawana100 Stock Index is up " + Math.abs(stockIndexChange) + " from your last visit.";
 	document.getElementById("stock").style.color = "green"
 } else if (stockIndexChange == 0) {
-    document.getElementById("stock").innerHTML = "The Kemyllawana500 Stock Index is unchanged from your last visit.";
+    document.getElementById("stock").innerHTML = "The Kemyllawana100 Stock Index is unchanged from your last visit.";
 	document.getElementById("stock").style.color = "black"
 } else {
-	document.getElementById("stock").innerHTML = "The Kemyllawana500 Stock Index is down " + Math.abs(stockIndexChange) + " from your last visit.";
+	document.getElementById("stock").innerHTML = "The Kemyllawana100 Stock Index is down " + Math.abs(stockIndexChange) + " from your last visit.";
 	document.getElementById("stock").style.color = "red"
 }
 </script>

@@ -19,69 +19,6 @@
 </figure>
 <br>
 
-
-<!-- *WIP* Place stick figure in map randomly 
-Current Issues:
-	Image does not render
-	Placement is not random -->
-
-<img id="stickfig1" style = "position: absolute; height:220px;" alt="Stick Figure 1 on Map" title="Stick Figure on Map">
-
-<!-- *WIP* Script -->
-<script>
-//variables
-var pictureArray = new Array();
-
-pictureArray[0] = new Image();
-pictureArray[0].src = "images/ballet-man.png";
-
-pictureArray[1] = new Image();
-pictureArray[1].src = "images/falling-man.png";
-
-pictureArray[2] = new Image();
-pictureArray[2].src = "images/handstand-man.png";
-
-pictureArray[3] = new Image();
-pictureArray[3].src = "images/questioning-man.png";
-
-//functions
-	//shuffleArray
-	window.onload = function shuffleArray(array) { //shuffles the array via durstenfeld shuffle
-		for (var i = array.length - 1; i > 0; i--) { //as "i--" suggests, suffle is intended to function "backwards"
-			var j = Math.floor(Math.random() * (i + 1));
-			var temp = array[i];
-			array[i] = array[j];
-			array[j] = temp;
-		}
-		return array;
-	}
-
-	//pickOne
-	window.onload = function pickOne(array) { //picks first value in the array
-			return array[0];		
-	}
-	
-	//generateHorizontalCoord
-	window.onload = function generateHorizontalCoord() { //generates a horizontal coordinate
-		var horizontalCoord = 100;
-	}
-	
-	//generateVerticalCoord
-	window.onload = function generateVerticalCoord() { //generates a vertical coordinate
-		var verticalCoord = 200);
-	}
-
-//instruction cycle
-document.getElementById("stickfig1").src = pickOne(shuffleArray(pictureArray));
-
-generateHorizontalCoord();
-generateVerticalCoord();
-
-document.getElementById("stickfig1").style.left = horizontalCoord;
-document.getElementById("stickfig1").style.top = verticalCoord; 
-
-</script>
-
 <!-- Text -->
 <p style="font-size:150%" style="text-align:left">Humble Beginings: </p>
 <p style="font-size:120%" style="text-align:left">Oyo-Uson was little more than a backwater duchy through the early 20th century. 
@@ -94,14 +31,19 @@ In return for defeating the troublemakers, Haushan Schkadubo was crowned King Ha
 <p style="font-size:120%" style="text-align:left">Oyo-Uson developed like no other West African kingdom in the 20th century. 
 Great industries from paperboard manufacturing to petroleum processing called Uyo-Uson home.  
 The great palace was renovated in 1991 with all the modern comforts, plumbing and electricity, even a backup diesel generator. 
-By 2000, literacy had risen to 55% and tax revenues revenues hit 250,000,000 Nigerian Naira.
+By 2000, literacy had risen to 55% and tax revenues revenues exceeded 250,000,000 Nigerian Naira.
+</p>
+<p style="font-size:150%" style="text-align:left">Internal Reforms: </p>
+<p style="font-size:120%" style="text-align:left">With all this money, I decided to build an array of great works.
+A new Ministry of State Affairs was created to do anything I wished from siphoning education funds into foreign bank accounts to fighting the Nigerian Mafia's grip on our cigar trade.
+To fight corruption, all public servants recieved a pay raise of 10 Naira per month and rotated ministries every 6 months.  
 </p>
 <p style="font-size:150%" style="text-align:left">Growing Troubles: </p>
 <p style="font-size:120%" style="text-align:left">Like many other nations, Uyo-Uson was deeply affected by the economic crisis of 2008-09. 
-Our kingdom was especially impacted from the following unfortunate disaster.
+Our kingdom was especially impacted by the following unfortunate disaster.
 In 2010, following my magnificent coronation, state funds were invested into a Bitcoin mining operation. 
 After digging through 500,000 tons of soil and stone, nothing was found besides 20 old coins, a plow, and my great-great-grandfather's tomb.
-This disasterous investment put us under a great deal of financial pressure, but we survived. 
+This disasterous investment put us under a great deal of financial pressure, but we survived, barely. 
 </p>
 <p style="font-size:150%" style="text-align:left">The Great Kerfuffle: </p>
 <p style="font-size:120%" style="text-align:left">In 2013, we were hit by the greatest threat to our nation ever. 
