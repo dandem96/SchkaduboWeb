@@ -9,7 +9,11 @@
 
 <p style="font-size:170%">Harambe:</p>
 
+<p style="text-align:center">
+<img src="images/harambe.jpg" alt="Haramble Picture" title="Harambe" style="width:500px;height:500px;">
+
 <!-- About Harambe -->
+<br>
 <p style="font-size:150%"> On May 28, 2016, an innocent 17-year-old hard working, peaceful, studious, and lets be honest ... monarchist Western lowland gorilla, Harambe was shot in cold blood, or as my palace zoologist always reminded me, warm blood, in the case of gorillas.
 </p>
 
@@ -19,14 +23,37 @@
 <p style="font-size:150%"> Remember: Pray for Harambe
 </p>
 
-<br>
 
+<br>
 <!-- To Bio -->
 <a href="../bio/index.html"><p style="font-size:150%;text-align:left"> Thats enough about Harambe, what about me?</a>
 
 <br>
 <!-- Back to Home -->
 <a href="../index.html"><p style="font-size:150%;text-align:left"> Back to Home</a>
+
+<!-- Days Since  -->
+<p style="text-align:center" id="days"></p>
+
+<script>
+//variables
+var HarambeDeathTime = 1464451200000; //(milliseconds between 1/1/1970 and 4PM 5/28/2016)
+var CurrentDate = new Date();
+var CurrentTime = CurrentDate.getTime();
+var DaysSinceHarambe;
+
+//function
+function getDaysSinceHarambe() {
+    DaysSinceHarambe = (CurrentTime - HarambeDeathTime) / 86400000;
+}
+
+//instruction cycle
+getDaysSinceHarambe();
+    document.getElementById("days").innerHTML = "It has been " + Math.floor(DaysSinceHarambe) + " sad, unfortunate days since Harambe passed.";
+	document.getElementById("days").style.color = "red"
+
+</script>
+
 
 </body>
 </html>
